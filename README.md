@@ -62,4 +62,4 @@ This project allows controlling LEDs wirelessly using a mobile/PC browser throug
 
 ## Circuit Diagram
 
-![Circuit Diagram](docs/circuitdiagram.png)
+![Circuit Diagram](docs\circuitdigram.png)
