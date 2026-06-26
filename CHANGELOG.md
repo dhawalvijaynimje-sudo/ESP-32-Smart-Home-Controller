@@ -2,7 +2,37 @@
 
 All notable changes to this project will be documented here.
 
-## v1.1 - ESP32 Smart Home Controller
+---
+
+## v1.2.0 - OLED Status & Motor Control Update
+
+### Added
+- Added L298N motor driver support
+- Added DC motor / fan control
+- Added motor speed control using PWM
+- Added LED brightness control slider
+- Added fan speed control slider
+- Added real-time OLED device status display
+- Added device ON/OFF state tracking
+
+### Improved
+- Improved web control interface
+- Improved device control logic
+- Improved power adjustment handling
+- Improved project documentation
+- Updated circuit diagram
+
+### Hardware
+- ESP32 DevKit V1
+- SSD1306 OLED Display
+- L298N Motor Driver
+- LED Module
+- DC Motor / Fan
+
+
+---
+
+## v1.1.0 - OLED & Web Interface Update
 
 ### Added
 - Added OLED display support
@@ -20,14 +50,22 @@ All notable changes to this project will be documented here.
 ### Hardware
 - ESP32 DevKit V1
 - SSD1306 OLED Display
-- LED modules
+- LED Modules
+
 
 ---
 
-## v1.0 - Initial Release
+## v1.0.0 - Initial Release
 
 ### Added
-- ESP32 WebServer control
-- Dual LED ON/OFF control
-- WiFi SoftAP mode
-- PWM brightness slider
+- Added ESP32 WebServer control
+- Added WiFi SoftAP mode
+- Added LED ON/OFF control
+- Added basic web interface
+- Added PWM brightness control
+
+### Hardware
+- ESP32 DevKit V1
+- LED Modules
+
+---

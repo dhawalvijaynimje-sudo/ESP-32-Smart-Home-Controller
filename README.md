@@ -1,68 +1,61 @@
 # ESP32 Smart Home Controller
 
-An IoT based smart home controller using ESP32 WebServer.  
-This project allows controlling LEDs wirelessly using a mobile/PC browser through ESP32 WiFi.
+A WiFi based smart home controller built using ESP32 with web-based device control.
+
+## Version
+
+Current Version: v1.2.0
+
 
 ## Features
 
-- WiFi based control using ESP32 SoftAP
-- Web based LED control
-- Multiple LED control
-- LED ON/OFF switching
-- PWM brightness control using sliders
-- OLED display for ESP32 IP address
-- No external WiFi router required
+- Control devices using ESP32 web server
+- WiFi Access Point mode
+- LED ON/OFF control
+- LED brightness control using PWM
+- DC motor / fan control
+- Fan speed control using PWM
+- L298N motor driver support
+- OLED display status
+- Real-time device status monitoring
+
 
 ## Hardware Used
 
 - ESP32 DevKit V1
-- OLED Display (128x64 I2C)
-- LEDs
-- Resistors
-- Jumper wires
-- Breadboard
+- SSD1306 OLED Display
+- L298N Motor Driver
+- LED Module
+- DC Motor / Fan
 
-## Libraries Used
-
-### ESP32 Built-in Libraries
-
-- `WiFi.h`
-  - Creates ESP32 WiFi Access Point
-
-- `WebServer.h`
-  - Creates web server for controlling devices
-
-### External Libraries
-
-- `Adafruit_GFX.h`
-  - Graphics library for OLED
-
-- `Adafruit_SSD1306.h`
-  - OLED display driver
-
-- `Wire.h`
-  - I2C communication
 
 ## Pin Configuration
 
+### LED
+
 | Component | ESP32 Pin |
 |---|---|
-| LED 1 | GPIO 4 |
-| LED 2 | GPIO 5 |
-| OLED SDA | GPIO 21 |
-| OLED SCL | GPIO 22 |
-
-## How It Works
-
-1. ESP32 creates its own WiFi network.
-2. User connects phone/laptop to ESP32 WiFi.
-3. Open ESP32 IP address in browser.
-4. Control LEDs from the webpage.
-5. PWM slider changes LED brightness.
+| LED PWM | GPIO 4 |
 
 
+### L298N Motor Driver
+
+| L298N | ESP32 |
+|---|---|
+| ENA | GPIO 5 |
+| IN1 | GPIO 18 |
+| IN2 | GPIO 19 |
 
 
+### OLED
 
-##                                            Thank You
+| OLED | ESP32 |
+|---|---|
+| SDA | GPIO 21 |
+| SCL | GPIO 22 |
 
+
+## How To Use
+
+1. Upload code to ESP32
+2. Connect phone to:
